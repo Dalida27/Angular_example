@@ -7,7 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
 import { UserComponent } from './user/user.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { FirebaseMethods } from 'src/utils/firebaseMethods';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FirebaseMethods
   ],
   providers: [],
   bootstrap: [AppComponent]

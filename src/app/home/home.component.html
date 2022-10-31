@@ -1,1 +1,6 @@
-<p>home works!</p>
+<div *ngFor="let post of posts">
+    <p>Id: {{ post.id }}</p>
+    <p>Title: {{ post.title }}</p>
+    <p>Username: {{ post.username }}</p>
+    <br>
+</div>
